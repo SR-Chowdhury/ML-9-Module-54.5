@@ -7,12 +7,17 @@ import {
 import './index.css'
 import Root from './routes/root';
 import ErrorPage from './ErrorPage';
+import Contact from './routes/Contact';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root/>,
     errorElement: <ErrorPage/>
+  },
+  {
+    path: "contacts/:contactId",
+    element: <Contact/>,
   },
 ]);
 
